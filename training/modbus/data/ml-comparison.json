@@ -1,0 +1,820 @@
+{
+  "created_utc": "2026-11-02T08:50:18.414378+00:00",
+  "models": {
+    "v6c": {
+      "TP": 7,
+      "TN": 10,
+      "FP": 6,
+      "FN": 1,
+      "accuracy": 0.7083333333333334,
+      "precision": 0.5384615384615384,
+      "recall": 0.875,
+      "f1": 0.6666666666666666
+    },
+    "v6c-tuned": {
+      "TP": 6,
+      "TN": 12,
+      "FP": 4,
+      "FN": 2,
+      "accuracy": 0.75,
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1": 0.6666666666666666
+    }
+  },
+  "events": [
+    {
+      "scenario": "benign-5p5",
+      "event_number": 1,
+      "fc": 5,
+      "event_time": "2026-11-02T08:45:08.815641+00:00",
+      "expected_value": "False",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:09.272+00:00",
+      "es_document_id": "gK9vm6EBppZO5kbwEzER",
+      "features": {
+        "request_count": 17.0,
+        "fc01_count": 6.0,
+        "fc02_count": 5.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 0.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.00022831697552516683,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": -4.8536449644892565e-05,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 2,
+      "fc": 6,
+      "event_time": "2026-11-02T08:45:14.335696+00:00",
+      "expected_value": "90",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:19.272+00:00",
+      "es_document_id": "0a9vm6EBppZO5kbwODoz",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.01150483692894555,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.005568556810888331,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 3,
+      "fc": 5,
+      "event_time": "2026-11-02T08:45:19.863407+00:00",
+      "expected_value": "True",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:24.272+00:00",
+      "es_document_id": "PK9vm6EBppZO5kbwTT-n",
+      "features": {
+        "request_count": 17.0,
+        "fc01_count": 6.0,
+        "fc02_count": 5.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.016252264000996886,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.002313377622988916,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 4,
+      "fc": 6,
+      "event_time": "2026-11-02T08:45:25.377285+00:00",
+      "expected_value": "57",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:29.272+00:00",
+      "es_document_id": "Qa9vm6EBppZO5kbwYj9i",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 2.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.026114333030546222,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.0013572438914804807,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 5,
+      "fc": 5,
+      "event_time": "2026-11-02T08:45:30.901359+00:00",
+      "expected_value": "True",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:34.272+00:00",
+      "es_document_id": "pK9vm6EBppZO5kbwdESu",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 3.0,
+        "fc06_30s_count": 2.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.06111126212479223,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.01056625445082654,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 6,
+      "fc": 6,
+      "event_time": "2026-11-02T08:45:36.445354+00:00",
+      "expected_value": "4",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:39.272+00:00",
+      "es_document_id": "hq9vm6EBppZO5kbwiEpj",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 3.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.08302857095286853,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.011303488579917503,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 7,
+      "fc": 5,
+      "event_time": "2026-11-02T08:45:41.960299+00:00",
+      "expected_value": "False",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:44.272+00:00",
+      "es_document_id": "5K9vm6EBppZO5kbwm1C-",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 3.0,
+        "fc06_30s_count": 3.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.11433834355633266,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.019900115854299655,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "benign-5p5",
+      "event_number": 8,
+      "fc": 6,
+      "event_time": "2026-11-02T08:45:47.488457+00:00",
+      "expected_value": "49",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:45:49.272+00:00",
+      "es_document_id": "y69vm6EBppZO5kbwrlWO",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 3.0,
+        "fc06_30s_count": 3.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.13242528049174612,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.02040976347836168,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 1,
+      "fc": 5,
+      "event_time": "2026-11-02T08:46:28.209008+00:00",
+      "expected_value": "True",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:46:29.272+00:00",
+      "es_document_id": "ya9wm6EBppZO5kbwS4aI",
+      "features": {
+        "request_count": 17.0,
+        "fc01_count": 6.0,
+        "fc02_count": 5.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 0.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.00022831697552516683,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": -4.8536449644892565e-05,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 2,
+      "fc": 6,
+      "event_time": "2026-11-02T08:46:38.728613+00:00",
+      "expected_value": "88",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:46:39.272+00:00",
+      "es_document_id": "eq9wm6EBppZO5kbwcJX2",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.01150483692894555,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.005568556810888331,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 3,
+      "fc": 5,
+      "event_time": "2026-11-02T08:46:49.258319+00:00",
+      "expected_value": "False",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:46:49.272+00:00",
+      "es_document_id": "p69wm6EBppZO5kbwmKQD",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.021581368978938364,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.003645268174103572,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 4,
+      "fc": 6,
+      "event_time": "2026-11-02T08:46:59.786084+00:00",
+      "expected_value": "70",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:47:04.272+00:00",
+      "es_document_id": "va9wm6EBppZO5kbw1Lg8",
+      "features": {
+        "request_count": 17.0,
+        "fc01_count": 5.0,
+        "fc02_count": 5.0,
+        "fc03_count": 6.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 2.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.0025162872143054127,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.0013788484328857153,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 5,
+      "fc": 5,
+      "event_time": "2026-11-02T08:47:10.321604+00:00",
+      "expected_value": "False",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:47:14.272+00:00",
+      "es_document_id": "Z69wm6EBppZO5kbw-sgj",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.021581368978938364,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.003645268174103572,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 6,
+      "fc": 6,
+      "event_time": "2026-11-02T08:47:20.860473+00:00",
+      "expected_value": "27",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:47:24.272+00:00",
+      "es_document_id": "oK9xm6EBppZO5kbwIdVP",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 2.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.011009064023418946,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": 0.001648326405689654,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 7,
+      "fc": 5,
+      "event_time": "2026-11-02T08:47:31.389460+00:00",
+      "expected_value": "False",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:47:34.272+00:00",
+      "es_document_id": "zq9xm6EBppZO5kbwSeRu",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.021581368978938364,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.003645268174103572,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "benign-10p5",
+      "event_number": 8,
+      "fc": 6,
+      "event_time": "2026-11-02T08:47:41.925229+00:00",
+      "expected_value": "14",
+      "attack": false,
+      "es_timestamp": "2026-11-02T08:47:44.272+00:00",
+      "es_document_id": "c69xm6EBppZO5kbwcPWA",
+      "features": {
+        "request_count": 17.0,
+        "fc01_count": 5.0,
+        "fc02_count": 5.0,
+        "fc03_count": 6.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 2.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.0025162872143054127,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.0013788484328857153,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc05-9p1",
+      "event_number": 1,
+      "fc": 5,
+      "event_time": "2026-11-02T08:48:22.801542+00:00",
+      "expected_value": "False",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:48:24.272+00:00",
+      "es_document_id": "v7Bym6EBppZO5kbwDC4W",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 1.0,
+        "fc06_30s_count": 0.0
+      },
+      "models": {
+        "v6c": {
+          "score": 0.02295165956013001,
+          "threshold": -0.0006368391480630887,
+          "anomaly": false
+        },
+        "v6c-tuned": {
+          "score": 0.004430007293570015,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc05-9p1",
+      "event_number": 2,
+      "fc": 5,
+      "event_time": "2026-11-02T08:48:31.932630+00:00",
+      "expected_value": "False",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:48:34.272+00:00",
+      "es_document_id": "XbBym6EBppZO5kbwM0DO",
+      "features": {
+        "request_count": 17.0,
+        "fc01_count": 6.0,
+        "fc02_count": 5.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 2.0,
+        "fc06_30s_count": 0.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.011341370837191111,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.0020892082070389784,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc05-9p1",
+      "event_number": 3,
+      "fc": 5,
+      "event_time": "2026-11-02T08:48:41.055820+00:00",
+      "expected_value": "True",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:48:44.272+00:00",
+      "es_document_id": "CLBym6EBppZO5kbwWVC4",
+      "features": {
+        "request_count": 16.0,
+        "fc01_count": 5.0,
+        "fc02_count": 5.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 3.0,
+        "fc06_30s_count": 0.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.02627318821702651,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.003856378543463379,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc05-9p1",
+      "event_number": 4,
+      "fc": 5,
+      "event_time": "2026-11-02T08:48:50.176533+00:00",
+      "expected_value": "True",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:48:54.272+00:00",
+      "es_document_id": "PLBym6EBppZO5kbwgV7-",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 5.0,
+        "fc02_count": 4.0,
+        "fc03_count": 4.0,
+        "write_count": 1.0,
+        "fc05_count": 1.0,
+        "fc06_count": 0.0,
+        "fc05_30s_count": 3.0,
+        "fc06_30s_count": 0.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.0662473471199082,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.010508576184447088,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc06-11p2",
+      "event_number": 1,
+      "fc": 6,
+      "event_time": "2026-11-02T08:49:30.783956+00:00",
+      "expected_value": "2",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:49:34.272+00:00",
+      "es_document_id": "7bBzm6EBppZO5kbwHps7",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 0.0,
+        "fc06_30s_count": 1.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.01661946232834799,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": 0.0012793931311823048,
+          "threshold": -0.0017232260492597296,
+          "anomaly": false
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc06-11p2",
+      "event_number": 2,
+      "fc": 6,
+      "event_time": "2026-11-02T08:49:42.030499+00:00",
+      "expected_value": "41",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:49:44.272+00:00",
+      "es_document_id": "FbBzm6EBppZO5kbwRKyX",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 0.0,
+        "fc06_30s_count": 2.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.04128362582910294,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.002877363083769735,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc06-11p2",
+      "event_number": 3,
+      "fc": 6,
+      "event_time": "2026-11-02T08:49:53.260018+00:00",
+      "expected_value": "86",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:49:54.272+00:00",
+      "es_document_id": "SbBzm6EBppZO5kbwbLpM",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 0.0,
+        "fc06_30s_count": 3.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.10233330160193821,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.013362818687536304,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    },
+    {
+      "scenario": "repeat-fc06-11p2",
+      "event_number": 4,
+      "fc": 6,
+      "event_time": "2026-11-02T08:50:04.486297+00:00",
+      "expected_value": "71",
+      "attack": true,
+      "es_timestamp": "2026-11-02T08:50:09.272+00:00",
+      "es_document_id": "QLBzm6EBppZO5kbwptPy",
+      "features": {
+        "request_count": 14.0,
+        "fc01_count": 4.0,
+        "fc02_count": 4.0,
+        "fc03_count": 5.0,
+        "write_count": 1.0,
+        "fc05_count": 0.0,
+        "fc06_count": 1.0,
+        "fc05_30s_count": 0.0,
+        "fc06_30s_count": 3.0
+      },
+      "models": {
+        "v6c": {
+          "score": -0.10233330160193821,
+          "threshold": -0.0006368391480630887,
+          "anomaly": true
+        },
+        "v6c-tuned": {
+          "score": -0.013362818687536304,
+          "threshold": -0.0017232260492597296,
+          "anomaly": true
+        }
+      }
+    }
+  ],
+  "note": "Same four scenario families as development; repeated-session holdout only."
+}

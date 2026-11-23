@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment / Credentials
+.env
+.env.*
+!.env.example
+*.key
+
+# Logs
+*.log
+demo-run/
+
+# Raw Capture Data
+*.pcap
+*.pcapng
+captures/
+data/raw/
+
+# Temporary Files
+*.swp
+*.tmp
+.ipynb_checkpoints/
+!/training/modbus/data/*.log

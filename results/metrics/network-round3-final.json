@@ -1,0 +1,52 @@
+{
+  "coverage": {
+    "rows": 10,
+    "reviewed": 10,
+    "used": 10,
+    "unlabeled": 0,
+    "excluded_by_reviewer": 0,
+    "prediction_unknown": 0
+  },
+  "metrics": [
+    {
+      "TP": 3,
+      "TN": 7,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "TP": 2,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "TP": 0,
+      "TN": 7,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "precision": null,
+      "recall": null,
+      "f1_score": null
+    },
+    {
+      "TP": 1,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    }
+  ]
+}

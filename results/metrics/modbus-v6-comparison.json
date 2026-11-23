@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "v6c": {
+      "TP": 7,
+      "TN": 15,
+      "FP": 9,
+      "FN": 1,
+      "accuracy": 0.6875,
+      "precision": 0.4375,
+      "recall": 0.875,
+      "f1": 0.5833333333333334
+    },
+    "v6e": {
+      "TP": 7,
+      "TN": 17,
+      "FP": 7,
+      "FN": 1,
+      "accuracy": 0.75,
+      "precision": 0.5,
+      "recall": 0.875,
+      "f1": 0.6363636363636364
+    }
+  },
+  "counts": {
+    "total": 32,
+    "normal": 24,
+    "attack": 8
+  }
+}

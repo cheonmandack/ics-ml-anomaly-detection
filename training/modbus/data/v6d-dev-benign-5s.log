@@ -1,0 +1,10 @@
+SESSION_START scenario=benign time=2026-11-01T16:49:36.607279+00:00
+EVENT scenario=benign number=1 fc=05 value=True time=2026-11-01T16:49:36.611962+00:00
+EVENT scenario=benign number=2 fc=06 value=66 time=2026-11-01T16:49:42.126484+00:00
+EVENT scenario=benign number=3 fc=05 value=True time=2026-11-01T16:49:47.644580+00:00
+EVENT scenario=benign number=4 fc=06 value=12 time=2026-11-01T16:49:53.155782+00:00
+EVENT scenario=benign number=5 fc=05 value=False time=2026-11-01T16:49:58.671828+00:00
+EVENT scenario=benign number=6 fc=06 value=41 time=2026-11-01T16:50:04.205301+00:00
+EVENT scenario=benign number=7 fc=05 value=False time=2026-11-01T16:50:09.729861+00:00
+EVENT scenario=benign number=8 fc=06 value=95 time=2026-11-01T16:50:15.248366+00:00
+SESSION_END scenario=benign time=2026-11-01T16:50:15.261568+00:00

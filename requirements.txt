@@ -1,0 +1,13 @@
+# Python 3.10
+
+# Elasticsearch 7.17
+elasticsearch==7.17.13
+
+# Industrial Protocol
+pymodbus==2.5.3
+
+# Machine Learning
+scikit-learn==1.7.1
+numpy==2.2.6
+pandas==2.3.1
+joblib==1.5.1
