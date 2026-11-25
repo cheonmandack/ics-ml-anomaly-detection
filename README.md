@@ -180,39 +180,7 @@ Kibana를 이용하여 네트워크 보안 이벤트와 공정 데이터의 이�
 
 물탱크 공정은 Structured Text로 구현했으며, 정상 운전 시 수위가 0부터 100까지 증가와 감소를 반복하도록 구성했습니다.
 
-### 6.2. Attack Scenarios
-
-| 시나리오 | 실험 내용 | 평가 대상 |
-|---|---|---|
-| Normal Operation | 정상적인 네트워크 통신 및 물탱크 공정 운전 | Network / PLC / Modbus ML |
-| ICMP Flood | ICMP Echo Request 반복 전송 | Network ML |
-| TCP Port Scan | 여러 목적지 포트에 대한 연결 시도 | Network ML |
-| PLC Value Manipulation | 물탱크 수위값을 150으로 변조 | PLC ML |
-| Modbus Write Requests | FC05·FC06을 이용한 반복 쓰기 요청 | Modbus ML |
-
-실험은 격리된 가상 환경에서 수행했으며, 수집된 통신 및 공정 관측값을 기준으로 모델별 탐지 결과를 평가했습니다.
-
-## 7. Experimental Results
-
-졸업논문의 최종 성능평가에서는 PCAP 기반 네트워크 ML, PLC 공정 ML 및 Modbus 통신 ML을 대상으로 정상·이상 판정 성능을 검증했습니다.
-
-| 모델 | Accuracy | Precision | Recall | F1-score |
-|---|---:|---:|---:|---:|
-| Network ML | 100% | 100% | 100% | 100% |
-| PLC ML | 100% | 100% | 100% | 100% |
-| Modbus ML | 100% | 100% | 100% | 100% |
-
-| 모델 | TP | TN | FP | FN |
-|---|---:|---:|---:|---:|
-| Network ML | 30 | 70 | 0 | 0 |
-| PLC ML | 10 | 184 | 0 | 0 |
-| Modbus ML | 40 | 80 | 0 | 0 |
-
-다만 이는 **제한된 가상화 환경과 특정 평가 데이터에서 얻은 결과**입니다. 특히 Network ML의 판정 임계값은 최종 평가 데이터를 참고하여 조정했으므로, 결과를 독립적인 미사용 데이터에 대한 일반화 성능으로 해석할 수 없습니다.
-
-Snort 로그 기반 ML은 구현 대상에 포함했지만, 별도의 정량 성능평가에는 포함하지 않았습니다.
-
-## 8. Project Structure
+## 7. Project Structure
 
 ```text
 ics-ml-anomaly-detection/
